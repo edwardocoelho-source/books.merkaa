@@ -1702,9 +1702,3 @@
   }
 }
 
-/* AJUSTE FINO — TEXTO SUPERIOR DO HERO (CONFORME CÓDIGO ENVIADO) */
-@media (min-width: 1367px) and (max-width: 1920px) {
-  #inicio .mh-eyebrow {
-    transform: translateY(20px);
-  }
-}
