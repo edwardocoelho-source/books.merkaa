@@ -1599,93 +1599,12 @@
 }
 
 /* ==========================================
-   MERKAA BOOKS — HERO RESPONSIVO
-   AJUSTES EXPERIMENTAIS
-   Preserva o desktop acima de 1366px
+   WIDESCREEN — A PARTIR DE 1921px
+   CONFIGURAÇÃO VISUAL APROVADA
    ========================================== */
 
-/* NOTEBOOK — 1201 a 1366px */
-@media (min-width: 1201px) and (max-width: 1366px) {
-  #inicio {
-    --mh-title-size: clamp(46px, 4.3vw, 60px);
-    --mh-min-height: 640px;
-  }
-
-  #inicio .mh-book {
-    width: 52%;
-    top: 85px;
-    right: 8%;
-  }
-}
-
-/* TABLET HORIZONTAL — 1025 a 1200px */
-@media (min-width: 1025px) and (max-width: 1200px) {
-  #inicio {
-    --mh-title-size: clamp(40px, 4.2vw, 52px);
-    --mh-min-height: 590px;
-  }
-
-  #inicio .mh-book {
-    width: 48%;
-    top: 75px;
-    right: 10%;
-  }
-
-  #inicio .mh-quote {
-    font-size: 15px;
-  }
-}
-
-/* TABLET VERTICAL — 881 a 1024px */
-@media (min-width: 881px) and (max-width: 1024px) {
-  #inicio {
-    --mh-title-size: 46px;
-    --mh-min-height: 570px;
-  }
-
-  #inicio .mh-book {
-    width: 47%;
-    top: 65px;
-    right: 9%;
-  }
-
-  #inicio .mh-quote {
-    font-size: 14px;
-  }
-}
-
-/* CELULAR HORIZONTAL — 768 a 880px */
-@media (min-width: 768px) and (max-width: 880px) {
-  #inicio .mh-book {
-    width: 44%;
-    top: 10%;
-    right: 17%;
-  }
-
-  #inicio .mh-quote {
-    font-size: 14px;
-  }
-}
-
-/* CELULAR VERTICAL — até 767px */
-@media (max-width: 767px) {
-  #inicio .mh-book {
-    width: 52%;
-    top: 12%;
-    right: 16%;
-  }
-
-  #inicio .mh-quote {
-    font-size: 13px;
-  }
-}
-
-/* ==========================================
-   AJUSTE FINO — LIVRO NO DESKTOP/WIDESCREEN
-   Aumente o valor para descer o livro.
-   Modifique apenas --mh-book-shift-desktop.
-   ========================================== */
-@media (min-width: 1367px) {
+/* POSIÇÃO DO LIVRO */
+@media (min-width: 1921px) {
   #inicio {
     --mh-book-shift-desktop: 155px;
   }
@@ -1695,22 +1614,30 @@
   }
 }
 
-/* WIDESCREEN — CONTROLE DE ALTURA */
-@media (min-width: 1367px) {
+/* ALTURA DO HERO */
+@media (min-width: 1921px) {
   #inicio .mh-inner {
     min-height: 850px;
   }
 }
 
-@media (min-width: 1367px) {
+/* POSIÇÃO DO CONTEÚDO ESQUERDO */
+@media (min-width: 1921px) {
   #inicio .mh-content {
     transform: translateY(-30px);
   }
 }
 
-/* WIDESCREEN — POSIÇÃO VERTICAL DO CENÁRIO */
-@media (min-width: 1367px) {
+/* POSIÇÃO VERTICAL DO CENÁRIO */
+@media (min-width: 1921px) {
   #inicio .mh-scenery {
     transform: translateY(40px);
+  }
+}
+
+/* DESKTOP — SUBIR CONTEÚDO ESQUERDO */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  #inicio .mh-content {
+    transform: translateY(-50px);
   }
 }
