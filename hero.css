@@ -1706,7 +1706,7 @@
    ========================================== */
 @media (min-width: 1367px) {
   #inicio {
-    --mh-book-shift-desktop: 65px;
+    --mh-book-shift-desktop: 105px;
   }
 
   #inicio .mh-book {
