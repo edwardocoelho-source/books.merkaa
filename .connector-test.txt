@@ -1,1 +1,0 @@
-Connectivity test for Merkaa Books repository. No website changes.
