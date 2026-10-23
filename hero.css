@@ -1,4 +1,8 @@
-
+/* MERKAA BOOKS | HERO #inicio
+   CSS consolidado a partir do arquivo aprovado no Elementor em 23/10/2026.
+   Mantém a ordem de precedência das regras ativas.
+   Não publicar sem validação visual final em cada formato.
+*/
 
 /* ==========================================
    MERKAA BOOKS — BLOCO 02 | HERO
@@ -855,749 +859,6 @@
   }
 }
 /* ==========================================
-   MERKAA BOOKS — BLOCO 02 | HERO
-   ELEMENTOR PRO
-   ========================================== */
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
-
-/* ==========================================
-   01 — PAINEL DE PERSONALIZAÇÃO
-   AJUSTE OS VALORES AQUI
-   ========================================== */
-
-#inicio {
-
-  /* CORES */
-  --mh-bg: #faf4ea;
-  --mh-ink: #0b2439;
-  --mh-blue: #075ce5;
-  --mh-cyan: #00c6ae;
-
-  /* FONTES */
-  --mh-font-text: 'Open Sans', sans-serif;
-  --mh-font-title: Georgia, 'Times New Roman', serif;
-
-  /* TIPOGRAFIA */
-  --mh-title-size: clamp(48px, 4.1vw, 90px);
-  --mh-title-weight: 700;
-  --mh-title-line: 1.15;
-
-  --mh-description-size: 17px;
-  --mh-description-weight: 400;
-
-  --mh-eyebrow-size: 10px;
-  --mh-quote-size: 23px;
-  --mh-benefit-size: 14px;
-
-  /* LARGURAS */
-  --mh-max-width: 1600px;
-  --mh-text-width: 47%;
-  --mh-visual-width: 59%;
-
-  /* ALTURA */
-  --mh-min-height: 800px;
-
-  /* ESPAÇAMENTOS */
-  --mh-padding-x: 4.5%;
-  --mh-padding-top: 60px;
-  --mh-padding-bottom: 32px;
-
-  /* CENÁRIO */
-  --mh-scenery-width: 120%;
-  --mh-scenery-right: -3%;
-  --mh-scenery-top: 0px;
-
-  /* LIVRO */
-  --mh-book-width: 39%;
-  --mh-book-right: 35%;
-  --mh-book-top: 220px;
-
-  /* BOTÃO */
-  --mh-button-font: 14px;
-  --mh-button-height: 56px;
-
-  /* ÍCONES */
-  --mh-icon-size: 32px;
-  --mh-benefit-gap: 22px;
-}
-
-
-/* ==========================================
-   MERKAA BOOKS — HERO WIDESCREEN
-   CONTROLE DA ALTURA
-   ========================================== */
-
-@media (min-width: 2400px) {
-
-  #inicio {
-
-    }
-
-}
-
-
-/* ==========================================
-   02 — BASE
-   ========================================== */
-
-#inicio,
-#inicio * {
-  box-sizing: border-box;
-}
-
-#inicio {
-  position: relative;
-  isolation: isolate;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: var(--mh-bg);
-  color: var(--mh-ink);
-  overflow: hidden;
-  scroll-margin-top: 20px;
-}
-
-#inicio .mh-inner {
-  position: relative;
-  width: 100%;
-  max-width: var(--mh-max-width);
-  min-height: var(--mh-min-height);
-
-  margin: 0 auto;
-
-  padding:
-    var(--mh-padding-top)
-    var(--mh-padding-x)
-    var(--mh-padding-bottom);
-}
-
-/* ==========================================
-   03 — CONTEÚDO ESQUERDO
-   ========================================== */
-
-#inicio .mh-content {
-  position: relative;
-  z-index: 4;
-
-  width: var(--mh-text-width);
-  padding-top: 5px;
-}
-
-/* PALAVRAS SUPERIORES */
-
-#inicio .mh-eyebrow {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-
-  gap: 5px;
-  width: fit-content;
-  padding-bottom: 18px;
-  margin-bottom: 28px;
-
-  position: relative;
-
-  font-family: var(--mh-font-text);
-  font-size: var(--mh-eyebrow-size);
-  font-weight: 700;
-  letter-spacing: 4px;
-  line-height: 1.5;
-
-  color: #788693;
-}
-
-#inicio .mh-eyebrow span {
-  display: block;
-}
-
-#inicio .mh-eyebrow::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-
-  width: 55px;
-  height: 2px;
-
-  background: linear-gradient(
-    90deg,
-    var(--mh-blue),
-    var(--mh-cyan)
-  );
-}
-
-/* ==========================================
-   04 — TÍTULO PRINCIPAL
-   ========================================== */
-
-#inicio .mh-title {
-  margin: 0 0 25px;
-  padding: 0;
-
-  font-family: var(--mh-font-title);
-  font-size: var(--mh-title-size);
-  font-weight: var(--mh-title-weight);
-  line-height: var(--mh-title-line);
-  letter-spacing: -0.045em;
-
-  color: var(--mh-ink);
-}
-
-/* GRADIENTE NA PALAVRA DIREÇÃO */
-
-#inicio .mh-title span {
-  display: inline-block;
-
-  background: linear-gradient(
-    100deg,
-    #075ce5 0%,
-    #168fd7 48%,
-    #00c6ae 100%
-  );
-
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: var(--mh-blue);
-}
-
-/* ==========================================
-   05 — DESCRIÇÃO
-   ========================================== */
-
-#inicio .mh-description {
-  max-width: 440px;
-  margin: 0 0 28px;
-  padding: 0;
-
-  font-family: var(--mh-font-text);
-  font-size: var(--mh-description-size);
-  font-weight: var(--mh-description-weight);
-  line-height: 1.55;
-
-  color: #263b4d;
-}
-
-/* ==========================================
-   06 — BOTÃO CONHECER O LIVRO
-   ========================================== */
-
-#inicio .mh-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-
-  min-height: var(--mh-button-height);
-  padding: 14px 32px;
-  border-radius: 40px;
-
-  background: linear-gradient(
-    105deg,
-    #075ce5 0%,
-    #009cc7 100%
-  );
-
-  font-family: var(--mh-font-text);
-  font-size: var(--mh-button-font);
-  font-weight: 600;
-  line-height: 1.3;
-
-  color: #fff;
-  text-decoration: none;
-
-  transition: transform .25s ease,
-              filter .25s ease;
-}
-
-#inicio .mh-button:hover {
-  color: #fff;
-  filter: brightness(1.08);
-  transform: translateY(-2px);
-}
-
-#inicio .mh-button span {
-  font-size: 22px;
-  line-height: 1;
-  font-weight: 300;
-}
-
-/* ==========================================
-   07 — ÁREA CENOGRÁFICA
-   ========================================== */
-
-#inicio .mh-visual {
-  position: absolute;
-  z-index: 2;
-
-  width: var(--mh-visual-width);
-  height: calc(100% - 60px);
-
-  top: 0;
-  right: 0;
-
-  pointer-events: none;
-}
-
-/* CENÁRIO DE FUNDO */
-
-#inicio .mh-scenery {
-  position: absolute;
-
-  display: block;
-  width: var(--mh-scenery-width);
-  max-width: none;
-  height: auto;
-
-  top: var(--mh-scenery-top);
-  right: var(--mh-scenery-right);
-
-  object-fit: contain;
-  z-index: 1;
-}
-
-/* LIVRO 3D INDEPENDENTE */
-
-#inicio .mh-book {
-  position: absolute;
-
-  display: block;
-  width: var(--mh-book-width);
-  max-width: none;
-  height: auto;
-
-  top: var(--mh-book-top);
-  right: var(--mh-book-right);
-
-  object-fit: contain;
-  z-index: 2;
-}
-
-/* ==========================================
-   08 — FRASE MANUSCRITA
-   ========================================== */
-
-#inicio .mh-quote {
-  position: absolute;
-  z-index: 3;
-
-  top: 75px;
-  right: 8%;
-
-  max-width: 170px;
-
-  font-family: Georgia, serif;
-  font-size: var(--mh-quote-size);
-  font-style: italic;
-  font-weight: 400;
-  line-height: 1.16;
-
-  color: #40546a;
-  text-align: center;
-  transform: rotate(-8deg);
-}
-
-#inicio .mh-quote::after {
-  content: "";
-  display: block;
-
-  width: 55px;
-  height: 2px;
-
-  margin: 18px auto 0;
-
-  background: #168fda;
-  transform: rotate(8deg);
-}
-
-/* ==========================================
-   09 — BENEFÍCIOS INFERIORES
-   ========================================== */
-
-#inicio .mh-benefits {
-  position: absolute;
-
-  left: var(--mh-padding-x);
-  right: var(--mh-padding-x);
-  bottom: 30px;
-
-  z-index: 5;
-
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-
-  gap: 0;
-  font-family: var(--mh-font-text);
-}
-
-#inicio .mh-benefit {
-  display: flex;
-  align-items: center;
-  gap: 11px;
-
-  padding: 0 var(--mh-benefit-gap);
-  min-height: 38px;
-
-  border-right: 1px solid rgba(11,36,57,.14);
-}
-
-#inicio .mh-benefit:first-child {
-  padding-left: 0;
-}
-
-#inicio .mh-benefit:last-child {
-  border-right: 0;
-}
-
-#inicio .mh-benefit img {
-  display: block;
-
-  width: var(--mh-icon-size);
-  height: var(--mh-icon-size);
-
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-#inicio .mh-benefit span {
-  display: block;
-
-  font-size: var(--mh-benefit-size);
-  font-weight: 400;
-  line-height: 1.4;
-
-  color: #263b4d;
-}
-
-/* ==========================================
-   10 — MONITORES GRANDES
-   ACIMA DE 1920 PX
-   ========================================== */
-
-@media (min-width: 1921px) {
-
-  #inicio {
-    --mh-title-size: 86px;
-    --mh-book-top: 110px;
-  }
-
-}
-
-/* ==========================================
-   11 — NOTEBOOKS E DESKTOPS
-   ATÉ 1440 PX
-   ========================================== */
-
-@media (max-width: 1440px) {
-
-  #inicio {
-    --mh-title-size: clamp(46px, 4.5vw, 70px);
-    --mh-min-height: 640px;
-
-    --mh-padding-top: 42px;
-
-    --mh-book-top: 85px;
-    --mh-book-width: 67%;
-
-    --mh-description-size: 15px;
-    --mh-quote-size: 19px;
-
-    --mh-benefit-size: 11px;
-    --mh-benefit-gap: 14px;
-  }
-
-}
-
-/* ==========================================
-   12 — TABLET HORIZONTAL
-   ATÉ 1100 PX
-   ========================================== */
-
-@media (max-width: 1100px) {
-
-  #inicio {
-    --mh-title-size: clamp(40px, 4.4vw, 54px);
-    --mh-min-height: 580px;
-
-    --mh-text-width: 49%;
-    --mh-visual-width: 58%;
-
-    --mh-padding-top: 35px;
-    --mh-book-top: 75px;
-    --mh-book-width: 69%;
-
-    --mh-description-size: 14px;
-    --mh-quote-size: 16px;
-
-    --mh-icon-size: 27px;
-    --mh-benefit-size: 10px;
-    --mh-benefit-gap: 10px;
-  }
-
-  #inicio .mh-quote {
-    right: 2%;
-  }
-}
-
-/* ==========================================
-   13 — TABLET VERTICAL
-   ATÉ 900 PX
-   ========================================== */
-
-@media (max-width: 900px) {
-
-  #inicio {
-    --mh-title-size: clamp(40px, 7.5vw, 62px);
-    --mh-min-height: auto;
-
-    --mh-text-width: 100%;
-    --mh-visual-width: 100%;
-
-    --mh-padding-x: 5%;
-    --mh-padding-top: 38px;
-
-    --mh-description-size: 16px;
-    --mh-book-width: 60%;
-  }
-
-  #inicio .mh-inner {
-    min-height: 0;
-    padding-bottom: 32px;
-  }
-
-  #inicio .mh-content {
-    width: 100%;
-  }
-
-  #inicio .mh-title {
-    max-width: 670px;
-  }
-
-  #inicio .mh-description {
-    max-width: 440px;
-  }
-
-  /* CENÁRIO EM FLUXO NORMAL */
-
-  #inicio .mh-visual {
-    position: relative;
-
-    top: auto;
-    right: auto;
-
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1.4 / 1;
-
-    margin: 14px auto 10px;
-  }
-
-  #inicio .mh-scenery {
-    width: 100%;
-    top: 0;
-    right: 0;
-  }
-
-  #inicio .mh-book {
-    width: 60%;
-    top: 10%;
-    right: 16%;
-  }
-
-  #inicio .mh-quote {
-    top: 2%;
-    right: 0;
-    font-size: 17px;
-  }
-
-  /* BENEFÍCIOS EM GRADE */
-
-  #inicio .mh-benefits {
-    position: relative;
-
-    left: auto;
-    right: auto;
-    bottom: auto;
-
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-
-    gap: 18px 15px;
-    margin-top: 25px;
-  }
-
-  #inicio .mh-benefit,
-  #inicio .mh-benefit:first-child {
-    padding: 0;
-    border: 0;
-  }
-
-}
-
-/* ==========================================
-   14 — CELULARES
-   ATÉ 600 PX
-   ========================================== */
-
-@media (max-width: 600px) {
-
-  #inicio {
-    --mh-title-size: clamp(35px, 9vw, 50px);
-    --mh-padding-top: 32px;
-
-    --mh-description-size: 14px;
-    --mh-eyebrow-size: 9px;
-
-    --mh-button-font: 13px;
-    --mh-button-height: 50px;
-
-    --mh-icon-size: 27px;
-    --mh-benefit-size: 10px;
-  }
-
-  #inicio .mh-eyebrow {
-    letter-spacing: 3px;
-    margin-bottom: 24px;
-  }
-
-  #inicio .mh-title {
-    margin-bottom: 20px;
-  }
-
-  #inicio .mh-description {
-    max-width: 360px;
-  }
-
-  #inicio .mh-button {
-    padding: 12px 25px;
-    gap: 18px;
-  }
-
-  #inicio .mh-visual {
-    aspect-ratio: 1.15 / 1;
-    margin-top: 22px;
-  }
-
-  #inicio .mh-scenery {
-    width: 112%;
-    right: -7%;
-  }
-
-  #inicio .mh-book {
-    width: 64%;
-    top: 12%;
-    right: 16%;
-  }
-
-  #inicio .mh-quote {
-    top: 1%;
-    right: 0;
-    font-size: 13px;
-    max-width: 100px;
-  }
-
-  #inicio .mh-quote::after {
-    width: 35px;
-    margin-top: 9px;
-  }
-
-  #inicio .mh-benefits {
-    gap: 22px 12px;
-    margin-top: 20px;
-  }
-
-}
-
-/* ==========================================
-   15 — CELULARES PEQUENOS
-   ATÉ 375 PX
-   ========================================== */
-
-@media (max-width: 375px) {
-
-  #inicio {
-    --mh-title-size: 34px;
-    --mh-description-size: 13px;
-  }
-
-  #inicio .mh-quote {
-    font-size: 11px;
-  }
-
-  #inicio .mh-benefit {
-    gap: 7px;
-  }
-
-  #inicio .mh-benefit span {
-    font-size: 9px;
-  }
-}
-
-/* ==========================================
-   16 — ACESSIBILIDADE
-   ========================================== */
-
-#inicio a:focus-visible {
-  outline: 2px solid var(--mh-blue);
-  outline-offset: 4px;
-}
-
-@media (prefers-reduced-motion: reduce) {
-
-  #inicio * {
-    transition: none !important;
-    animation: none !important;
-  }
-
-}
-/* ==========================================
-   HERO — CURVA BRANCA DOS ÍCONES
-   ========================================== */
-
-#inicio .mh-inner {
-  isolation: isolate;
-}
-
-/* CURVA BRANCA */
-#inicio .mh-inner::before {
-  content: "";
-  position: absolute;
-  z-index: 3;
-
-  /* POSIÇÃO E TAMANHO */
-  left: -10%;
-  bottom: -45px;
-  width: 75%;
-  height: 170px;
-
-  /* COR */
-  background: #FFFFFF;
-
-  /* CURVATURA */
-  border-radius: 55% 80% 0 0 / 85% 100% 0 0;
-
-  transform: rotate(1deg);
-  pointer-events: none;
-}
-
-/* ÍCONES ACIMA DA CURVA */
-#inicio .mh-benefits {
-  z-index: 5;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-  #inicio .mh-inner::before {
-    left: -10%;
-    bottom: -25px;
-    width: 90%;
-    height: 110px;
-    transform: none;
-  }
-}
-
 /* ==========================================
    WIDESCREEN — A PARTIR DE 1921px
    CONFIGURAÇÃO VISUAL APROVADA
@@ -1641,3 +902,424 @@
     transform: translateY(-50px);
   }
 }
+
+
+/* ==========================================
+   NOTEBOOK — 1201px A 1366px
+   AJUSTE DO LIVRO
+   ========================================== */
+
+
+@media (min-width: 1201px) and (max-width: 1366px) {
+  #inicio .mh-book {
+    width: 42%;
+    height: auto;
+    top: 160px;
+    right: 35%;
+  }
+}
+
+
+
+/* ==========================================
+   NOTEBOOK — 1201px A 1366px
+   AJUSTES DO CONTEÚDO ESQUERDO
+   ========================================== */
+@media (min-width: 1201px) and (max-width: 1366px) {
+
+  /* SUBIR TODO O CONTEÚDO */
+  #inicio .mh-content {
+    transform: translateY(-30px);
+  }
+
+  /* DIMINUIR O BOTÃO */
+  #inicio .mh-button {
+    min-height: 46px;
+    padding: 10px 24px;
+    font-size: 12px;
+    gap: 18px;
+  }
+
+  /* SETA DO BOTÃO */
+  #inicio .mh-button span {
+    font-size: 19px;
+  }
+}
+
+
+
+/* ==========================================
+   TABLET HORIZONTAL — 901px A 1200px
+   AJUSTE INICIAL DO LIVRO
+   ========================================== */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+  #inicio .mh-book {
+    width: 38%;
+    height: auto;
+    top: 220px;
+    /* Declaração inválida removida: right sem valor */
+  }
+}
+
+
+/* ==========================================
+   TABLET HORIZONTAL — 901px A 1200px
+   CONTEÚDO ESQUERDO E BOTÃO
+   ========================================== */
+
+@media (min-width: 901px) and (max-width: 1200px) {
+
+  /* SUBIR O CONJUNTO ESQUERDO */
+  #inicio .mh-content {
+    transform: translateY(-35px);
+  }
+
+  /* REDUZIR O BOTÃO */
+  #inicio .mh-button {
+    min-height: 42px;
+    padding: 9px 20px;
+    font-size: 11px;
+    gap: 14px;
+  }
+
+  /* REDUZIR A SETA */
+  #inicio .mh-button span {
+    font-size: 17px;
+  }
+}
+
+
+/* TABLET HORIZONTAL — ALINHAR BASE DO CENÁRIO */
+@media (min-width: 901px) and (max-width: 1200px) {
+  #inicio .mh-scenery {
+    transform: translateY(70px);
+  }
+}
+
+
+
+/* TABLET HORIZONTAL — ÍCONES DENTRO DA ÁREA BRANCA */
+@media (min-width: 901px) and (max-width: 1200px) {
+  #inicio .mh-benefits {
+    left: 3%;
+    right: 18%;
+  }
+}
+
+
+
+/* TABLET HORIZONTAL — AJUSTE DE ALTURA */
+@media (min-width: 901px) and (max-width: 1200px) {
+  #inicio .mh-inner {
+    min-height: 580px;
+  }
+}
+
+/* iPad 10 / TABLET HORIZONTAL — AJUSTES FINOS */
+@media (min-width: 901px) and (max-width: 1200px) {
+
+  /* subir um pouco o bloco da esquerda */
+  #inicio .mh-content {
+    transform: translateY(-50px);
+  }
+
+  /* subir o cenário para não ficar cortado embaixo */
+  #inicio .mh-scenery {
+    transform: translateY(35px);
+  }
+}
+
+
+
+
+/* ==========================================
+   TABLET VERTICAL — 768px A 900px
+   AJUSTE INICIAL DO LIVRO
+   ========================================== */
+
+@media (min-width: 768px) and (max-width: 900px) {
+
+  #inicio .mh-book {
+    width: 38%;
+    height: auto;
+    top: 20%;
+    right: 28%;
+  }
+
+}
+
+
+/* TABLET VERTICAL — CENÁRIO EM LARGURA TOTAL */
+@media (min-width: 768px) and (max-width: 900px) {
+
+  #inicio .mh-visual {
+    width: 100vw;
+    max-width: none;
+    margin-left: calc(50% - 50vw);
+    position: relative;
+    aspect-ratio: 1.4 / 1;
+  }
+
+  #inicio .mh-scenery {
+    width: 100%;
+    height: auto;
+    left: 0;
+    right: auto;
+    top: auto;
+    bottom: 0;
+    transform: none;
+  }
+}
+
+
+
+/* TABLET VERTICAL — CURVA E BENEFÍCIOS */
+@media (min-width: 768px) and (max-width: 900px) {
+
+  #inicio .mh-inner::before {
+    left: -5%;
+    bottom: -30px;
+    width: 110%;
+    height: 140px;
+    border-radius: 55% 80% 0 0 / 85% 100% 0 0;
+  }
+
+  #inicio .mh-benefits {
+    left: 4%;
+    right: 4%;
+    bottom: 18px;
+    width: 92%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  #inicio .mh-benefit {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+}
+
+#inicio .mh-inner::before {
+  left: -5%;
+  bottom: -30px;
+  width: 110%;
+  height: 140px;
+  border-radius: 55% 80% 0 0 / 85% 100% 0 0;
+}
+
+/* TABLET VERTICAL — BASE BRANCA DA CURVA */
+@media (min-width: 768px) and (max-width: 900px) {
+  #inicio .mh-inner {
+    background: linear-gradient(
+      to bottom,
+      transparent calc(100% - 95px),
+      #ffffff calc(100% - 95px)
+    );
+  }
+}
+
+
+
+/* TABLET VERTICAL — SUBIR O CENÁRIO */
+@media (min-width: 768px) and (max-width: 900px) {
+  #inicio .mh-scenery {
+    transform: translateY(-59px);
+  }
+}
+
+
+
+/* TABLET VERTICAL — REDUZIR ALTURA DO BLOCO */
+@media (min-width: 68px) and (max-width: 900px) {
+  #inicio .mh-inner {
+    min-height: 1050px;
+  }
+}
+/* TABLET VERTICAL — REMOVER CURVA E USAR BLOCO RETO */
+@media (min-width: 768px) and (max-width: 900px) {
+
+  /* remove a curva branca */
+  #inicio .mh-inner::before {
+    content: none;
+    display: none;
+  }
+
+  /* cria bloco reto branco para os benefícios */
+  #inicio .mh-benefits {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    background: #ffffff;
+    padding: 22px 28px 24px;
+    box-sizing: border-box;
+    border-radius: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+  }
+
+  #inicio .mh-benefit {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}
+
+
+
+/* TABLET VERTICAL — REDUZIR ALTURA DO HERO */
+@media (min-width: 768px) and (max-width: 900px) {
+  #inicio .mh-inner {
+    min-height: 950px;
+  }
+}
+
+
+/* TABLET VERTICAL — APROXIMAR ÍCONES DO CENÁRIO */
+@media (min-width: 768px) and (max-width: 900px) {
+
+  #inicio .mh-inner {
+    min-height: 0;
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  #inicio .mh-visual {
+    margin-bottom: 0;
+  }
+
+  #inicio .mh-benefits {
+    position: relative;
+    bottom: auto;
+    margin-top: 0;
+  }
+
+}
+
+
+
+/* TABLET VERTICAL — POSIÇÃO DA FRASE */
+@media (min-width: 768px) and (max-width: 900px) {
+
+  #inicio .mh-quote {
+    top: -25px;
+    right: 18%;
+    transform: translateX(50%) rotate(-8deg);
+    text-align: center;
+  }
+
+}
+
+
+/* ==========================================
+   CELULAR VERTICAL — BENEFÍCIOS 2 x 2
+   BASE BRANCA RETA, SEM CURVA
+   ========================================== */
+
+@media (max-width: 767px) {
+
+  /* Remove a curva branca */
+  #inicio .mh-inner::before {
+    content: none;
+    display: none;
+  }
+
+  /* Permite que a altura acompanhe o conteúdo */
+  #inicio .mh-inner {
+    height: auto;
+    min-height: 0;
+    padding-bottom: 0;
+  }
+
+  /* Reserva espaço para o livro não cobrir os ícones */
+  #inicio .mh-visual {
+    position: relative;
+    height: auto;
+    min-height: 0;
+    margin-bottom: 0;
+  }
+
+  /* Faixa branca reta com benefícios em duas linhas */
+  #inicio .mh-benefits {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    width: 100%;
+    margin: 0;
+    padding: 24px 12px;
+    background: #ffffff;
+    border-radius: 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px 14px;
+    align-items: center;
+  }
+
+  #inicio .mh-benefit {
+    min-width: 0;
+    width: 100%;
+    /* Declaração inválida removida: padding sem unidade */
+    border: 0;
+  }
+}
+
+
+/* CELULAR VERTICAL — CENTRALIZAR CONJUNTO DOS 4 BENEFÍCIOS */
+@media (max-width: 767px) {
+
+  #inicio .mh-benefits {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    justify-items: start;
+    column-gap: 16px;
+    row-gap: 15px;
+
+    padding: 20px 25px;
+  }
+
+  #inicio .mh-benefit {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* CELULAR VERTICAL — FUNDO BRANCO DE PONTA A PONTA */
+@media (max-width: 767px) {
+
+  #inicio .mh-benefits {
+    width: calc(100% + 2 * var(--mh-padding-x));
+    margin-left: calc(-1 * var(--mh-padding-x));
+    margin-right: 0;
+    padding: 24px calc(var(--mh-padding-x) + 20px);
+    box-sizing: border-box;
+    background: #ffffff;
+  }
+
+}
+
+/* CELULAR VERTICAL — AUMENTAR ÁREA DO LIVRO */
+@media (max-width: 767px) {
+
+  #inicio .mh-visual {
+    aspect-ratio: auto;
+    height: 100px;
+    min-height: 400px;
+  }
+
+}
+
+/* CELULAR VERTICAL — DESCER O LIVRO */
+@media (max-width: 767px) {
+  #inicio .mh-book {
+    transform: translateY(35px);
+  }
+}
+
