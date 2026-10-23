@@ -314,8 +314,8 @@
   position: absolute;
   z-index: 3;
 
-  top: 35px;
-  right: 3%;
+  top: 75px;
+  right: 8%;
 
   max-width: 170px;
 
@@ -1182,8 +1182,8 @@
   position: absolute;
   z-index: 3;
 
-  top: 35px;
-  right: 3%;
+  top: 75px;
+  right: 8%;
 
   max-width: 170px;
 
@@ -1687,7 +1687,7 @@
    ========================================== */
 @media (min-width: 1367px) {
   #inicio {
-    --mh-book-shift-desktop: 105px;
+    --mh-book-shift-desktop: 155px;
   }
 
   #inicio .mh-book {
@@ -1695,10 +1695,22 @@
   }
 }
 
-/* WIDESCREEN — ALTURA LIVRE, SEM ALTURA MÍNIMA FIXA */
+/* WIDESCREEN — CONTROLE DE ALTURA */
 @media (min-width: 1367px) {
   #inicio .mh-inner {
-    min-height: auto;
+    min-height: 850px;
   }
 }
 
+@media (min-width: 1367px) {
+  #inicio .mh-content {
+    transform: translateY(-30px);
+  }
+}
+
+/* WIDESCREEN — POSIÇÃO VERTICAL DO CENÁRIO */
+@media (min-width: 1367px) {
+  #inicio .mh-scenery {
+    transform: translateY(40px);
+  }
+}
