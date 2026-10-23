@@ -412,7 +412,6 @@
 
   #inicio {
     --mh-title-size: 86px;
-    --mh-min-height: 790px;
     --mh-book-top: 110px;
   }
 
@@ -824,13 +823,6 @@
 @media (min-width: 2400px) {
 
   #inicio {
-    /* ALTURA DO HERO — não da página inteira */
-    --mh-min-height: 1200px;
-
-    /* ESPAÇAMENTO INTERNO */
-    --mh-padding-top: 75px;
-    --mh-padding-bottom: 55px;
-
     /* COLUNA ESQUERDA: negativo sobe; positivo desce */
     --mh-content-top: -30px;
 
@@ -940,17 +932,7 @@
 
   #inicio {
 
-    /* ALTURA MÍNIMA DO HERO */
-    --mh-min-height: 1200px;
-
-    /* ESPAÇO SUPERIOR INTERNO */
-    --mh-padding-top: 750px;
-
-    /* ESPAÇO INFERIOR INTERNO */
-    --mh-padding-bottom: 550
-    px;
-
-  }
+    }
 
 }
 
@@ -1298,7 +1280,6 @@
 
   #inicio {
     --mh-title-size: 86px;
-    --mh-min-height: 790px;
     --mh-book-top: 110px;
   }
 
@@ -1711,5 +1692,19 @@
 
   #inicio .mh-book {
     transform: translateY(var(--mh-book-shift-desktop));
+  }
+}
+
+/* WIDESCREEN — ALTURA LIVRE, SEM ALTURA MÍNIMA FIXA */
+@media (min-width: 1367px) {
+  #inicio .mh-inner {
+    min-height: auto;
+  }
+}
+
+/* AJUSTE FINO — TEXTO SUPERIOR DO HERO (CONFORME CÓDIGO ENVIADO) */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  #inicio .mh-eyebrow {
+    transform: translateY(20px);
   }
 }
